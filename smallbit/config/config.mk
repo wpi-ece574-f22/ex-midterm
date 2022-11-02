@@ -1,8 +1,8 @@
 export DESIGN_NAME = movavg
 export PLATFORM    = sky130hd
 
-export VERILOG_FILES = /OpenROAD-flow-scripts/flow/mydesign/midterm-patrickschaumont/smallbit/rtl/movavg.v
-export SDC_FILE      = /OpenROAD-flow-scripts/flow/mydesign/midterm-patrickschaumont/smallbit/config/constraint.sdc
+export VERILOG_FILES = /OpenROAD-flow-scripts/flow/mydesign/ex-midterm/smallbit/rtl/movavg.v
+export SDC_FILE      = /OpenROAD-flow-scripts/flow/mydesign/ex-midterm/smallbit/config/constraint.sdc
 
 # Adders degrade GCD
 export ADDER_MAP_FILE :=
