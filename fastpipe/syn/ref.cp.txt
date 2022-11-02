@@ -1,0 +1,89 @@
+OpenSTA 2.3.2 12022edc37 Copyright (c) 2021, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: /mnt/volume_nyc1_01/skywater-pdk/libraries/sky130_fd_sc_hd/latest/timing/sky130_fd_sc_hd__tt_025C_1v80.lib line 23, default_fanout_load is 0.0.
+Warning: set_input_delay relative to a clock defined on the same port/pin not allowed.
+Startpoint: _2358_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _2484_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _2358_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.29    0.29 v _2358_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.15    0.44 v _1478_/X (sky130_fd_sc_hd__xor2_1)
+   0.24    0.69 v _1482_/X (sky130_fd_sc_hd__a31o_1)
+   0.38    1.07 v _1486_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    1.46 v _1490_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    1.86 v _1494_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    2.25 v _1498_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    2.64 v _1502_/X (sky130_fd_sc_hd__maj3_1)
+   0.38    3.03 v _1506_/X (sky130_fd_sc_hd__maj3_1)
+   0.23    3.26 ^ _1518_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.16    3.42 v _1532_/Y (sky130_fd_sc_hd__o211ai_1)
+   0.33    3.75 ^ _1545_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.20    3.95 ^ _1559_/X (sky130_fd_sc_hd__o311a_1)
+   0.15    4.10 ^ _1573_/X (sky130_fd_sc_hd__o311a_1)
+   0.14    4.25 v _1587_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.33    4.58 ^ _1600_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.19    4.76 v _1614_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.33    5.09 ^ _1627_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.16    5.25 v _1641_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.41    5.67 ^ _1653_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.21    5.87 v _1666_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.43    6.30 ^ _1679_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.18    6.48 v _1692_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.32    6.80 ^ _1705_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.16    6.96 v _1719_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.42    7.38 ^ _1732_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.18    7.56 v _1745_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.42    7.98 ^ _1758_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.18    8.16 v _1771_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.32    8.48 ^ _1783_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.16    8.64 v _1795_/Y (sky130_fd_sc_hd__o311ai_0)
+   0.15    8.79 ^ _1803_/Y (sky130_fd_sc_hd__nand4b_1)
+   0.14    8.93 v _1808_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.30    9.23 ^ _1819_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.19    9.42 v _1824_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.40    9.82 v _1829_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   10.21 v _1833_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   10.60 v _1838_/X (sky130_fd_sc_hd__maj3_1)
+   0.37   10.97 v _1843_/X (sky130_fd_sc_hd__maj3_1)
+   0.15   11.12 v _1845_/X (sky130_fd_sc_hd__and2_0)
+   0.16   11.27 v _1848_/X (sky130_fd_sc_hd__a21o_1)
+   0.14   11.41 v _1850_/X (sky130_fd_sc_hd__and2_0)
+   0.14   11.55 ^ _1853_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.09   11.64 v _1855_/Y (sky130_fd_sc_hd__o21bai_1)
+   0.09   11.73 ^ _1856_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.00   11.73 ^ _2484_/D (sky130_fd_sc_hd__dfxtp_1)
+          11.73   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+          10.00 ^ _2484_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.07    9.93   library setup time
+           9.93   data required time
+---------------------------------------------------------
+           9.93   data required time
+         -11.73   data arrival time
+---------------------------------------------------------
+          -1.80   slack (VIOLATED)
+
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             1.94e-03   5.14e-05   3.78e-09   1.99e-03  87.1%
+Combinational          1.77e-04   1.18e-04   2.97e-09   2.96e-04  12.9%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.12e-03   1.70e-04   6.75e-09   2.29e-03 100.0%
+                          92.6%       7.4%       0.0%

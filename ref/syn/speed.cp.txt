@@ -1,0 +1,59 @@
+OpenSTA 2.3.2 12022edc37 Copyright (c) 2021, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: /mnt/volume_nyc1_01/skywater-pdk/libraries/sky130_fd_sc_hd/latest/timing/sky130_fd_sc_hd__tt_025C_1v80.lib line 23, default_fanout_load is 0.0.
+Warning: set_input_delay relative to a clock defined on the same port/pin not allowed.
+Startpoint: _2148_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: dout[55] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _2148_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.29    0.29 v _2148_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.38    0.67 v _1510_/X (sky130_fd_sc_hd__maj3_1)
+   0.41    1.08 v _1512_/X (sky130_fd_sc_hd__xor3_2)
+   0.17    1.25 v _1514_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.53    1.78 v _1547_/X (sky130_fd_sc_hd__or4_1)
+   0.40    2.18 v _1574_/X (sky130_fd_sc_hd__or3_1)
+   0.20    2.38 ^ _1575_/Y (sky130_fd_sc_hd__o32ai_2)
+   0.08    2.46 v _1660_/Y (sky130_fd_sc_hd__a21oi_2)
+   0.22    2.68 ^ _1661_/Y (sky130_fd_sc_hd__nor3_4)
+   0.14    2.82 v _1889_/Y (sky130_fd_sc_hd__nand4_2)
+   0.19    3.01 v _1895_/X (sky130_fd_sc_hd__and3_1)
+   0.13    3.14 v _1896_/X (sky130_fd_sc_hd__buf_6)
+   0.18    3.32 v _1954_/X (sky130_fd_sc_hd__o21a_1)
+   0.31    3.63 v _1955_/X (sky130_fd_sc_hd__a221o_1)
+   0.15    3.77 ^ _1960_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.11    3.88 ^ _1961_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.00    3.88 ^ dout[55] (out)
+           3.88   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+   0.00   10.00   output external delay
+          10.00   data required time
+---------------------------------------------------------
+          10.00   data required time
+          -3.88   data arrival time
+---------------------------------------------------------
+           6.12   slack (MET)
+
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             8.23e-04   2.86e-05   1.62e-09   8.52e-04  60.4%
+Combinational          3.22e-04   2.38e-04   3.45e-09   5.60e-04  39.6%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.15e-03   2.66e-04   5.07e-09   1.41e-03 100.0%
+                          81.1%      18.9%       0.0%

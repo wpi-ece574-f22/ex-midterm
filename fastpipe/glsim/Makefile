@@ -1,6 +1,8 @@
 all:
 	@echo "libcmd           Prepare library command file"
-	@echo "iver             Simulate with iVerilog"
+	@echo "iverref          Simulate (default version) with iVerilog"
+	@echo "iverarea         Simulate (abc.area version) with iVerilog"
+	@echo "iverspeed        Simulate (abc.speed version) with iVerilog"
 	@echo "clean            Cleanup"
 
 
@@ -18,12 +20,38 @@ libcmd:
 #
 # this substitute is good for functional simulation, but is obviously not correct for timing simulation
 
-iver:
-	sed /[0-9a-z]_0/s/_0/_1/ ../syn/movavg_gl.v >tmp
+iverref:
+	sed /[0-9a-z]_0/s/_0/_1/ ../syn/ref.movavg_gl.v >tmp
 	sed /[0-9a-z]_2/s/_2/_1/ tmp >tmp2
 	sed /[0-9a-z]_4/s/_4/_1/ tmp2 >tmp3
-	iverilog -DFUNCTIONAL -c lib.cmd tmp3 movavgtb.v
-	rm -f tmp tmp2 tmp3
+	sed /[0-9a-z]_6/s/_6/_1/ tmp3 >tmp4
+	sed /[0-9a-z]_8/s/_8/_1/ tmp4 >tmp5
+	sed /[0-9a-z]_12/s/_12/_1/ tmp5 >tmp6
+	sed /[0-9a-z]_16/s/_16/_1/ tmp6 >tmp7
+	iverilog -DFUNCTIONAL -c lib.cmd tmp7 movavgtb.v
+	rm -f tmp tmp2 tmp3 tmp4 tmp5 tmp6 tmp7
+
+iverarea:
+	sed /[0-9a-z]_0/s/_0/_1/ ../syn/area.movavg_gl.v >tmp
+	sed /[0-9a-z]_2/s/_2/_1/ tmp >tmp2
+	sed /[0-9a-z]_4/s/_4/_1/ tmp2 >tmp3
+	sed /[0-9a-z]_6/s/_6/_1/ tmp3 >tmp4
+	sed /[0-9a-z]_8/s/_8/_1/ tmp4 >tmp5
+	sed /[0-9a-z]_12/s/_12/_1/ tmp5 >tmp6
+	sed /[0-9a-z]_16/s/_16/_1/ tmp6 >tmp7
+	iverilog -DFUNCTIONAL -c lib.cmd tmp7 movavgtb.v
+	rm -f tmp tmp2 tmp3 tmp4 tmp5 tmp6 tmp7
+
+iverspeed:
+	sed /[0-9a-z]_0/s/_0/_1/ ../syn/speed.movavg_gl.v >tmp
+	sed /[0-9a-z]_2/s/_2/_1/ tmp >tmp2
+	sed /[0-9a-z]_4/s/_4/_1/ tmp2 >tmp3
+	sed /[0-9a-z]_6/s/_6/_1/ tmp3 >tmp4
+	sed /[0-9a-z]_8/s/_8/_1/ tmp4 >tmp5
+	sed /[0-9a-z]_12/s/_12/_1/ tmp5 >tmp6
+	sed /[0-9a-z]_16/s/_16/_1/ tmp6 >tmp7
+	iverilog -DFUNCTIONAL -c lib.cmd tmp7 movavgtb.v
+	rm -f tmp tmp2 tmp3 tmp4 tmp5 tmp6 tmp7
 
 clean:
 	rm -rf  *~ *vcd a.out lib.cmd

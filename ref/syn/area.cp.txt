@@ -1,0 +1,72 @@
+OpenSTA 2.3.2 12022edc37 Copyright (c) 2021, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning: /mnt/volume_nyc1_01/skywater-pdk/libraries/sky130_fd_sc_hd/latest/timing/sky130_fd_sc_hd__tt_025C_1v80.lib line 23, default_fanout_load is 0.0.
+Warning: set_input_delay relative to a clock defined on the same port/pin not allowed.
+Startpoint: _3907_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: dout[63] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ _3907_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.45    0.45 ^ _3907_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.07    0.52 v _2177_/Y (sky130_fd_sc_hd__nor2_8)
+   0.15    0.68 ^ _2194_/Y (sky130_fd_sc_hd__o21ai_2)
+   0.07    0.74 v _2195_/Y (sky130_fd_sc_hd__inv_2)
+   0.08    0.82 ^ _2196_/Y (sky130_fd_sc_hd__nand2_4)
+   0.08    0.90 v _2200_/Y (sky130_fd_sc_hd__nand3_2)
+   0.06    0.96 ^ _2226_/Y (sky130_fd_sc_hd__nand2_1)
+   0.05    1.01 v _2227_/Y (sky130_fd_sc_hd__nand2_1)
+   0.07    1.08 ^ _2228_/Y (sky130_fd_sc_hd__nand2_1)
+   0.07    1.14 v _2230_/Y (sky130_fd_sc_hd__nand2_1)
+   0.17    1.31 ^ _2287_/Y (sky130_fd_sc_hd__o21ai_2)
+   0.08    1.40 v _2404_/Y (sky130_fd_sc_hd__nand2_1)
+   0.10    1.50 ^ _2410_/Y (sky130_fd_sc_hd__nand2_2)
+   0.07    1.57 v _2646_/Y (sky130_fd_sc_hd__nand2_2)
+   0.09    1.66 ^ _2654_/Y (sky130_fd_sc_hd__nand2_4)
+   0.07    1.73 v _3117_/Y (sky130_fd_sc_hd__nand2_4)
+   0.07    1.79 ^ _3127_/Y (sky130_fd_sc_hd__nand2_8)
+   0.06    1.85 v _3518_/Y (sky130_fd_sc_hd__nand2_2)
+   0.09    1.94 ^ _3527_/Y (sky130_fd_sc_hd__nand2_4)
+   0.05    1.99 v _3683_/Y (sky130_fd_sc_hd__nand2_4)
+   0.07    2.06 ^ _3689_/Y (sky130_fd_sc_hd__nand2_4)
+   0.05    2.10 v _3777_/Y (sky130_fd_sc_hd__nand2_2)
+   0.07    2.18 ^ _3780_/Y (sky130_fd_sc_hd__nand2_2)
+   0.05    2.23 v _3820_/Y (sky130_fd_sc_hd__nand2_2)
+   0.07    2.30 ^ _3822_/Y (sky130_fd_sc_hd__nand2_2)
+   0.05    2.35 v _3824_/Y (sky130_fd_sc_hd__nand2_2)
+   0.06    2.40 ^ _3826_/Y (sky130_fd_sc_hd__nand2_1)
+   0.04    2.44 v _3834_/Y (sky130_fd_sc_hd__nand2_1)
+   0.03    2.48 ^ _3837_/Y (sky130_fd_sc_hd__nand2_1)
+   0.00    2.48 ^ dout[63] (out)
+           2.48   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+   0.00   10.00   output external delay
+          10.00   data required time
+---------------------------------------------------------
+          10.00   data required time
+          -2.48   data arrival time
+---------------------------------------------------------
+           7.52   slack (MET)
+
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             8.23e-04   2.41e-05   1.62e-09   8.47e-04  61.3%
+Combinational          2.36e-04   3.00e-04   5.37e-09   5.35e-04  38.7%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.06e-03   3.24e-04   6.99e-09   1.38e-03 100.0%
+                          76.6%      23.4%       0.0%
